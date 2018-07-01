@@ -1,0 +1,10 @@
+@define-mixin icon $name, $color: blue {
+    .icon.icon-$(name) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.icon-$(name):hover {
+        color: white;
+        background-color: $color;
+    }
+}

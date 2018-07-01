@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./mixins";
+
+
+@mixin icon test, var(--main-color) {
+    background: url('./baseline-accessibility-24px.svg');
+    background-size: contain;
+    height:45px;
+    width:45px;
+}
