@@ -5,7 +5,8 @@
   "semanticCommits": true,
   "semanticCommitType": "chore",
   "extends": [
-    "config:base"
+    "config:base",
+    ":disableRateLimiting"
   ],
     "major": {
     "packageRules": [{
