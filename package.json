@@ -43,7 +43,7 @@
         "prop-types": "15.6.2",
         "react": "16.4.1",
         "react-dom": "16.4.1",
-        "rmwc": "1.8.3"
+        "rmwc": "6.1.4"
     },
     "devDependencies": {
         "@thc/babel-preset-react": "0.1.0-alpha.6",
