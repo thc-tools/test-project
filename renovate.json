@@ -1,5 +1,31 @@
 {
+  "assignees": ["c3dr0x", "Hartorn"],
+  "separateMinorPatch": true,
+  "rebaseStalePrs": true,
+  "semanticCommits": true,
+  "semanticCommitType": "chore",
   "extends": [
     "config:base"
-  ]
+  ],
+    "major": {
+    "packageRules": [{
+      "packagePatterns": [".*"],
+      "semanticCommitType": "feat",
+      "labels": ["dependencies", "dep:major"]
+	}]
+  },
+  "minor": {
+    "packageRules": [{
+      "packagePatterns": [".*"],
+      "semanticCommitType": "fix",
+      "labels": ["dependencies", "dep:minor"]
+    }]
+  },
+  "patch": {
+    "packageRules": [{
+      "packagePatterns": [".*"],
+      "semanticCommitType": "chore",
+      "labels": ["dependencies", "dep:patch"]
+    }]
+  }
 }
