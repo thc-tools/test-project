@@ -49,6 +49,6 @@
         "@thc/babel-preset-react": "0.1.0-alpha.6",
         "@thc/webpack-react": "0.1.0-alpha.8",
         "better-npm-run": "0.1.0",
-        "webpack": "4.16.1"
+        "webpack": "5.6.0"
     }
 }
