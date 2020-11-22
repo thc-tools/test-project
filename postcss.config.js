@@ -1,7 +1,17 @@
-const configFunc = require('@thc/webpack-react/lib/postcss-config');
-
 module.exports = ({ file, options, env }) => {
-    const config = configFunc({ file, options, env });
-    // Do what you want here
-    return config;
+    return {
+        plugins: {
+            "postcss-import": { path: file.dirname },
+            "postcss-mixins": true,
+            "postcss-flexbugs-fixes": true,
+            "postcss-normalize": true,
+            "postcss-preset-env": {
+                stage: 3,
+                features: {
+                    "nesting-rules": true,
+                },
+            },
+            cssnano: env === "production" ? { preset: "default" } : false,
+        },
+    };
 };

@@ -11,16 +11,16 @@
     },
     "betterScripts": {
         "start": {
-            "command": "node ./dev-server.js",
+            "command": "webpack-dashboard -- webpack --watch",
             "env": {
                 "NODE_ENV": "development",
                 "OUTPUT_DIR": "./dev",
-                "HOT_RELOAD": "true",
-                "OUTPUT_PUBLIC_PATH": "."
+                "OUTPUT_PUBLIC_PATH": ".",
+                "HOT_RELOAD": "true"
             }
         },
         "watch": {
-            "command": "webpack-cli --watch --progress --colors",
+            "command": "webpack-dashboard -- webpack --watch --progress --color",
             "env": {
                 "NODE_ENV": "development",
                 "OUTPUT_DIR": "./dev",
@@ -28,7 +28,7 @@
             }
         },
         "build": {
-            "command": "webpack-cli --progress --colors",
+            "command": "webpack-dashboard -- webpack --progress --color",
             "env": {
                 "NODE_ENV": "production",
                 "OUTPUT_DIR": "./dist",
@@ -39,16 +39,12 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@babel/runtime": "7.0.0-beta.54",
-        "prop-types": "15.6.2",
-        "react": "16.4.1",
-        "react-dom": "16.4.1",
-        "rmwc": "1.8.3"
+        "prop-types": "15.7.2",
+        "react": "17.0.1",
+        "react-dom": "17.0.1"
     },
     "devDependencies": {
-        "@thc/babel-preset-react": "0.1.0-alpha.6",
-        "@thc/webpack-react": "0.1.0-alpha.8",
-        "better-npm-run": "0.1.0",
-        "webpack": "4.16.1"
+        "@thc/webpack-atom-js-react-css": "1.0.1-beta.9",
+        "better-npm-run": "0.1.1"
     }
 }

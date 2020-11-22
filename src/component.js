@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { hot } from "react-hot-loader";
-// import { Button } from 'rmwc/Button';
-// import '@material/button/dist/mdc.button.css';
-import "./app.css";
 
 const test = {
     truc: {
@@ -11,11 +7,11 @@ const test = {
     }
 };
 
-class App extends Component {
+class MainComponent extends Component {
     render() {
         return (
             <div>
-                {"Test app ohohoh"}
+                {"Test app"}
                 <div>{test?.truc?.bidule}</div>
                 <div>{test?.lol?.bidule === undefined && "Undefined"}</div>
                 <div>{test?.lol?.bidule ?? "hihi"}</div>
@@ -26,6 +22,6 @@ class App extends Component {
     }
 }
 
-App.propTypes = {};
+MainComponent.propTypes = {};
 
-export default hot(module)(App);
+export default MainComponent;
